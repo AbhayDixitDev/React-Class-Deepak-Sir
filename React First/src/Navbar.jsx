@@ -1,30 +1,28 @@
 import "./style.css"
 const Navbar=()=>{
 
-    const navbar={
-        display:"flex",
-        justifyContent:"space-evenly",
-        listStyleType:"none",
-        backgroundColor:"#333",
-        color:"#fff",
-        padding:"10px",
-        width:"100%",
-        margin:"0px"
-    }
-    const liItemStyle={
-      backgroundColor:"rgba(255, 255, 255, 0)",
-      cursor:"pointer",
-      fontSize:"20px",
-    }
     return(
     <>
-    <ul style={navbar}>
-    <li style={liItemStyle}>Home</li>
-    <li style={liItemStyle}>Services</li>
-    <li style={liItemStyle}>Contact</li>
-    <li style={liItemStyle}>About us</li>
-    <li style={liItemStyle}>Logout</li>
-   </ul>
+    <div className="navbar">
+            <div className="navbar-left">
+                <a href="#"><img
+                        src="https://assets-global.website-files.com/622fbc5a718ac3417fcd3d75/6230b271b897e76d2705ed6e_logo-developer-webflow-ecommerce-template.svg"
+                        alt=""/></a>
+
+            </div>
+            <div className="navbar-right">
+                <ul className="list">
+                    <li className="listitems"><a href="#hero">Home</a></li>
+                    <li className="listitems"><a href="#about">About</a></li>
+                    <li className="listitems"><a href="#skills">Skills</a></li>
+                    <li className="listitems"><a href="#portfolio">Portfolio</a></li>
+                    <li className="listitems"><a href="#form">Pages</a></li>
+                </ul>
+                <div className="cartbtn">
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+        </div>
    </>
     )
 };

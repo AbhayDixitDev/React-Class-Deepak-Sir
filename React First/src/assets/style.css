@@ -127,7 +127,7 @@
   
   .hero-left {
     padding-top: 35vh;
-    width: 580px;
+    width: 45%;
     
     height: 140vh;
     padding-left: 180px;
@@ -156,11 +156,9 @@
   
   .hero-right {
     color: white;
-    width: 10.5vw;  
+    width: 50.5vw;  
     height: 120vh;
     padding-top: 15vh;
-    padding-right: 200px;
-    padding-left: 350px;
   }
   .hero-right .aboutme {
     padding-bottom: 15vh;
@@ -773,7 +771,7 @@
       /* ==========navbar end======== */
       
       /* =========hero start========= */
-      /* .hero-img img{
+       .hero-img img{
         overflow-x: hidden;
         
         height: 200px;
@@ -785,7 +783,7 @@
         height:140vh ;
         overflow-x: hidden;
         flex-wrap: wrap;
-      } */
+      } 
       .hero {
         flex-wrap: wrap;
       
@@ -805,8 +803,7 @@
       
       .hero-left {
         padding-top: 35vh;
-        width: 200px;
-        padding-left: 20px;
+        width: 100px;
         overflow-x: hidden;
       }
       
@@ -835,17 +832,12 @@
   
       }
       
-      .hero-right {
-        /* color: white;
-        width: 15.5vw;
+      /* .hero-right {
+         color: white;
+        width: 50.5vw;
         padding-top: 25vh;
-        padding-right: 0px;
-        padding-left: 0px;
-        overflow-x: hidden;
-        overflow-x: hidden; */
   
-  
-      }
+      } */
       .hero-right .aboutme {
         padding-bottom: 15vh;
       }
@@ -867,6 +859,8 @@
         padding-bottom: 2vh;
         line-height: 35px;
         overflow-x: hidden;
+        width: 500px;
+        color: red;
   
       }
       .hero-right .more1 {

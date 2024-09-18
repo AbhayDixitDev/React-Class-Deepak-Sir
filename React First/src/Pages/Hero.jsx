@@ -1,4 +1,5 @@
-import "./style.css";
+import "../assets/style.css";
+
 const Hero=()=>{
     return(
         <>
@@ -17,37 +18,37 @@ const Hero=()=>{
                     <a href="#"><i className="fa-solid fa-circle-chevron-down"></i></a>
                 </div>
             </div>
-            <div className="hero-right">
+            <div className="hero-right" >
                 <div className="aboutme">
-                    <div className="title1">
+                    <div className="title1" style={{width:"500px"}}>
                         ABOUT ME
                     </div>
-                    <div className="para1">
+                    <div className="para1" style={{width:"500px"}}>
                         Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum
                         convallis lacus gravida.
                     </div>
-                    <a href="#" className="more1">
+                    <a href="#" className="more1" style={{width:"500px"}}>
                         LEARN MORE 
                     </a>
 
                 </div>
-                <div className="mywork">
-                    <div className="title1">
+                <div className="mywork" style={{width:"500px"}}>
+                    <div className="title1" style={{width:"500px"}}>
                         MY WORK
                     </div>
-                    <div className="para1">
+                    <div className="para1" style={{width:"500px"}}>
                         Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum
                         convallis lacus gravida.
 
                     </div>
-                    <a href="#" className="more1">
+                    <a href="#" className="more1" style={{width:"500px"}}>
                         BROWSE PORTFOLIO 
                     </a>
 
-                    <div className="follow">
+                    <div className="follow" style={{width:"500px"}}>
                         FOLLOW ME
                     </div>
-                    <div className="socialimage">
+                    <div className="socialimage" style={{width:"500px"}}>
                         <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i className="fa-brands fa-twitter"></i></a>
                         <a href="#"><i className="fa-brands fa-instagram"></i></a>

@@ -1,3 +1,5 @@
+import "../assets/style.css";
+
 const Footer=()=>{
     return(
         <>

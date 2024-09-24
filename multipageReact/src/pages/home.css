@@ -1,0 +1,14 @@
+#shopbtn{
+    text-decoration: none;
+}
+
+.containbrand{
+    opacity: 0.5;
+}
+.containbrand:hover{
+    opacity: 1;
+}
+
+#tent1:hover{
+    background-image: url("../assets/images/home/tent12.jpeg");
+}

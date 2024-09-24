@@ -1,5 +1,7 @@
-#navlink{
-    color:  black;
+.navlink{
+    color:  white !important;
     text-decoration: none;
     margin: 10px;
+    
 }
+

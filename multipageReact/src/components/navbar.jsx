@@ -11,9 +11,9 @@ const Navbar1=()=>{
    
     return(
 
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" variant="dark" bg="black" style={{alignItems:"center"}}>
       <Container fluid>
-        <Navbar.Brand href="#">Camping</Navbar.Brand>
+        <Navbar.Brand href="#"><Link className="navlink" to="/">Camping</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -21,10 +21,20 @@ const Navbar1=()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link id="navlink" to="/">Home</Link>
-            <Link id="navlink" to="/shop">Shop</Link>
-            <NavDropdown title="Products" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+            <Link className="navlink" to="/">Home</Link>
+            <Link className="navlink" to="/shop">Shop</Link>
+            <NavDropdown title="Products"   id="navbarScrollingDropdown" >Products
+              <NavDropdown.Item href="#action3" >Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5" >
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Pages" id="navbarScrollingDropdown" >
+              <NavDropdown.Item href="#action3" >Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
               </NavDropdown.Item>
@@ -33,17 +43,7 @@ const Navbar1=()=>{
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Pages" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Link id="navlink" to="/foxkit">Foxkit</Link>
+            <Link className="navlink" to="/foxkit">Foxkit</Link>
 
             
           </Nav>

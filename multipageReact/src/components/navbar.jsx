@@ -7,11 +7,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import "./navbar.css"
-const Navbar1=()=>{
-   
-    return(
+const Navbar1 = () => {
 
-    <Navbar expand="lg" variant="dark" bg="black" style={{alignItems:"center"}}>
+  return (
+
+    <Navbar expand="lg" variant="dark" bg="black" style={{ alignItems: "center" }}>
       <Container fluid>
         <Navbar.Brand href="#"><Link className="navlink" to="/">Camping</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -23,7 +23,7 @@ const Navbar1=()=>{
           >
             <Link className="navlink" to="/">Home</Link>
             <Link className="navlink" to="/shop">Shop</Link>
-            <NavDropdown title="Products"   id="navbarScrollingDropdown" >Products
+            <NavDropdown title="Products" id="navbarScrollingDropdown" >
               <NavDropdown.Item href="#action3" >Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -45,9 +45,9 @@ const Navbar1=()=>{
             </NavDropdown>
             <Link className="navlink" to="/foxkit">Foxkit</Link>
 
-            
+
           </Nav>
-          
+
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -57,12 +57,12 @@ const Navbar1=()=>{
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-         <Navbar.Brand href="#">Account</Navbar.Brand>
+          <Navbar.Brand href="#">Account</Navbar.Brand>
         </Navbar.Collapse>
       </Container>
-    </Navbar>   
+    </Navbar>
 
-    );
+  );
 }
 
 export default Navbar1;

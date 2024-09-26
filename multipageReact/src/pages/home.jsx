@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </header>
 
-      <Container>
+      <Container fluid>
         <Row className='d-flex justify-content-center align-items-center '>
           <Col sm xs={6} md={4} lg={2} xl={2}><img src={brand1} className='containbrand' /></Col>
           <Col sm xs={6} md={4} lg={2} xl={2}><img src={brand2} className='containbrand' /></Col>
@@ -142,7 +142,7 @@ const Home = () => {
             <Button variant="outline-dark" className="mx-auto" style={{ width: "120px", margin: "20px 0", marginLeft: "auto", marginRight: "auto" }}>SHOP NOW</Button>
           </center>
         </Row>
-        
+
 
       </CardGroup>
 
@@ -155,119 +155,119 @@ const Home = () => {
             </div>
           </div>
           <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature1} roundedCircle style={{width:"150px",height:"150px"}}/>
+            <Image src={nature1} roundedCircle style={{ width: "150px", height: "150px" }} />
             <h4 style={{ marginTop: "20px" }}>Tents</h4>
             <h6>4 Items</h6>
           </Col>
           <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature2} roundedCircle style={{width:"150px",height:"150px"}}/>
+            <Image src={nature2} roundedCircle style={{ width: "150px", height: "150px" }} />
             <h4 style={{ marginTop: "20px" }}>Lighting</h4>
             <h6>1 Items</h6>
           </Col>
           <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature3} roundedCircle style={{width:"150px",height:"150px"}}/>
+            <Image src={nature3} roundedCircle style={{ width: "150px", height: "150px" }} />
             <h4 style={{ marginTop: "20px" }}>Gifts</h4>
             <h6>5 Items</h6>
           </Col>
           <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature4} roundedCircle style={{width:"150px",height:"150px"}}/>
+            <Image src={nature4} roundedCircle style={{ width: "150px", height: "150px" }} />
             <h4 style={{ marginTop: "20px" }}>Chairs</h4>
             <h6>1 Items</h6>
           </Col>
           <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature5} roundedCircle style={{width:"150px",height:"150px"}}/>
+            <Image src={nature5} roundedCircle style={{ width: "150px", height: "150px" }} />
             <h4 style={{ marginTop: "20px" }}>Blankets</h4>
             <h6>1 Items</h6>
           </Col>
         </Row>
       </div>
 
-      <div className="bundle">
-       <Row>
-         <Col xs={12} md={12} lg={12} xl={6}>
-         <div className="bundle-img">
-            <div className="cir1">
+      <div className="bundle" >
+        <Row>
+          <Col xs={12} md={12} lg={12} xl={6}>
+            <div className="bundle-img">
+              <div className="cir1">
                 <div className="wave-cir-con">
-                    <div className="sonar-wave"></div>
+                  <div className="sonar-wave"></div>
                 </div>
 
-            </div>
-            <div className="box-1">
-                <img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165" alt=""/>
+              </div>
+              <div className="box-1">
+                <img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165" alt="" />
                 <div className="box-1-1">
-                    <div>Homecamp Classic Bell Tent</div>
-                    <div>$1,259.00</div>
+                  <div>Homecamp Classic Bell Tent</div>
+                  <div>$1,259.00</div>
                 </div>
-            </div>
-            <div className="cir2">
+              </div>
+              <div className="cir2">
 
                 <div className="wave-cir-con">
-                    <div className="sonar-wave"></div>
+                  <div className="sonar-wave"></div>
                 </div>
 
-            </div>
+              </div>
 
-            <div className="box-2">
-                <img src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165" alt=""/>
+              <div className="box-2">
+                <img src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165" alt="" />
                 <div className="box-2-1">
-                    <div>Homecamp Fenby Camp Chair - Desert Khaki
-                        </div>
-                    <div>$349.00</div>
+                  <div>Homecamp Fenby Camp Chair - Desert Khaki
+                  </div>
+                  <div>$349.00</div>
                 </div>
-            </div>
+              </div>
 
-            
 
-            <div className="cir3">
+
+              <div className="cir3">
 
                 <div className="wave-cir-con">
-                    <div className="sonar-wave"></div>
+                  <div className="sonar-wave"></div>
                 </div>
 
-            </div>
-            <div className="box-3">
-                <img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165" alt=""/>
+              </div>
+              <div className="box-3">
+                <img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165" alt="" />
                 <div className="box-3-1">
-                    <div>Homecamp Tipi Tent - Sand - 3.5m</div>
-                    <div>$899.00</div>
+                  <div>Homecamp Tipi Tent - Sand - 3.5m</div>
+                  <div>$899.00</div>
                 </div>
+              </div>
             </div>
-        </div>
-         </Col>
-        <Col xs={12} md={12} lg={12} xl={6}>
-        <div className="bundle-right">
-            <div className="br-1">BUNDLE & SAVE</div>
-            <div className="br-2">BUILD YOUR BUNDLES</div>
-            <div className="br-3">
+          </Col>
+          <Col xs={12} md={12} lg={12} xl={6} >
+            <div className="bundle-right" >
+              <div className="br-1">BUNDLE & SAVE</div>
+              <div className="br-2">BUILD YOUR BUNDLES</div>
+              <div className="br-3">
                 <div className="br-3-1">1</div>
                 <div className="br-3-2"><img
-                        src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165"
-                        alt="" /></div>
+                  src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165"
+                  alt="" /></div>
                 <div className="br-3-3">Homecamp Fenby Camp Chair - Desert Khaki</div>
                 <div className="br-3-4">$349.00</div>
-            </div>
+              </div>
 
-            <div className="br-3">
+              <div className="br-3">
                 <div className="br-3-1">2</div>
                 <div className="br-3-2"><img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165"
-                        alt="" /></div>
+                  alt="" /></div>
                 <div className="br-3-3">Homecamp Classic Bell Tent</div>
                 <div className="br-3-4">$1259.00</div>
-            </div>
+              </div>
 
-            <div className="br-3">
+              <div className="br-3">
                 <div className="br-3-1">3</div>
                 <div className="br-3-2"><img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165"
-                        alt=""/></div>
+                  alt="" /></div>
                 <div className="br-3-3">Homecamp Tipi Tent - Sand - 3.5m</div>
                 <div className="br-3-4">$899.00</div>
-            </div>
+              </div>
 
-            <div className="br-4"><a href="#">ADD TO CART | $2,507.00</a></div>
-        </div>
-        </Col>
-       </Row>
-    </div>
+              <div className="br-4"><a href="#">ADD TO CART | $2,507.00</a></div>
+            </div>
+          </Col>
+        </Row>
+      </div>
     </>
   );
 

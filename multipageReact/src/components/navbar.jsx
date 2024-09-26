@@ -13,7 +13,7 @@ const Navbar1 = () => {
 
     <Navbar expand="lg" variant="dark" bg="black" style={{ alignItems: "center" }}>
       <Container fluid>
-        <Navbar.Brand href="#"><Link className="navlink" to="/">Camping</Link></Navbar.Brand>
+        <Navbar.Brand ><Link className="navlink" to="/">Camping</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -57,7 +57,7 @@ const Navbar1 = () => {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-          <Navbar.Brand href="#">Account</Navbar.Brand>
+          <Link className="navlink" to="/login">Account</Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

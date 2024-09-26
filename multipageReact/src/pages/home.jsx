@@ -43,6 +43,17 @@ import nature3 from "../assets/images/home/nature3.jpg"
 import nature4 from "../assets/images/home/nature4.jpg"
 import nature5 from "../assets/images/home/nature5.jpg"
 
+import gift11 from "../assets/images/home/gift11.png"
+import gift12 from "../assets/images/home/gift12.png"
+import gift21 from "../assets/images/home/gift21.jpeg"
+import gift22 from "../assets/images/home/gift22.jpg"
+import gift31 from "../assets/images/home/gift31.jpeg"
+import gift32 from "../assets/images/home/gift32.jpeg"
+import gift41 from "../assets/images/home/gift41.jpg"
+import gift51 from "../assets/images/home/gift51.jpeg"
+import gift52 from "../assets/images/home/gift52.jpeg"
+
+
 
 const Home = () => {
   const [imageUrl1, setImageUrl1] = useState(tent11);
@@ -54,6 +65,24 @@ const Home = () => {
   const image_21 = () => { setImageUrl2(tent21); };
   const image_32 = () => { setImageUrl3(tent32); };
   const image_31 = () => { setImageUrl3(tent31); };
+
+  const [giftUrl1, setGiftUrl1] = useState(gift11);
+  const [giftUrl2, setGiftUrl2] = useState(gift21);
+  const [giftUrl3, setGiftUrl3] = useState(gift31);
+  const [giftUrl4, setGiftUrl4] = useState(gift41);
+  const [giftUrl5, setGiftUrl5] = useState(gift51);
+  const gift_12 = () => { setGiftUrl1(gift12); };
+  const gift_11 = () => { setGiftUrl1(gift11); };
+  const gift_22 = () => { setGiftUrl2(gift22); };
+  const gift_21 = () => { setGiftUrl2(gift21); };
+  const gift_32 = () => { setGiftUrl3(gift32); };
+  const gift_31 = () => { setGiftUrl3(gift31); };
+  const gift_42 = () => { setGiftUrl4(gift41); };
+  const gift_41 = () => { setGiftUrl4(gift41); };
+  const gift_52 = () => { setGiftUrl5(gift52); };
+  const gift_51 = () => { setGiftUrl5(gift51); };
+
+
 
   return (
     <>
@@ -100,8 +129,8 @@ const Home = () => {
           <Col sm ><Card >
             <Card.Img variant="top" src={imageUrl1} id="tent1" onMouseOver={image_12}
               onMouseOut={image_11} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
+            <Card.Body style={{display:"block",alignContent:"center",alignItems:"center",textAlign:"center"}}>
+              <Card.Title >TENTS</Card.Title>
               <Card.Text>
                 Homecamp Tipi Tent
               </Card.Text>
@@ -113,8 +142,8 @@ const Home = () => {
           <Col sm><Card >
             <Card.Img variant="top" src={imageUrl2} id="tent2" onMouseOver={image_22}
               onMouseOut={image_21} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
+            <Card.Body style={{display:"block",alignContent:"center",alignItems:"center",textAlign:"center"}}>
+              <Card.Title>TENTS</Card.Title>
               <Card.Text>
                 Homecamp Classic Bell Tent
               </Card.Text>
@@ -126,8 +155,8 @@ const Home = () => {
           <Col sm> <Card >
             <Card.Img variant="top" src={imageUrl3} id="tent3" onMouseOver={image_32}
               onMouseOut={image_31} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
+            <Card.Body style={{display:"block",alignContent:"center",alignItems:"center",textAlign:"center"}}>
+              <Card.Title>TENTS</Card.Title>
               <Card.Text>
                 Homecamp Tipi Tent Sand
               </Card.Text>
@@ -182,92 +211,170 @@ const Home = () => {
         </Row>
       </div>
 
-      <div className="bundle" >
+      <div className="bundle" fluid >
         <Row>
-          <Col xs={12} md={12} lg={12} xl={6}>
-            <div className="bundle-img">
-              <div className="cir1">
-                <div className="wave-cir-con">
-                  <div className="sonar-wave"></div>
-                </div>
-
-              </div>
-              <div className="box-1">
-                <img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165" alt="" />
-                <div className="box-1-1">
-                  <div>Homecamp Classic Bell Tent</div>
-                  <div>$1,259.00</div>
-                </div>
-              </div>
-              <div className="cir2">
-
-                <div className="wave-cir-con">
-                  <div className="sonar-wave"></div>
-                </div>
-
+          <Col xs={12} md={12} lg={12} xl={6} className="bundle-img">
+            <div className="cir1">
+              <div className="wave-cir-con">
+                <div className="sonar-wave"></div>
               </div>
 
-              <div className="box-2">
-                <img src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165" alt="" />
-                <div className="box-2-1">
-                  <div>Homecamp Fenby Camp Chair - Desert Khaki
-                  </div>
-                  <div>$349.00</div>
-                </div>
+            </div>
+            <div className="box-1">
+              <img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165" alt="" />
+              <div className="box-1-1">
+                <div>Homecamp Classic Bell Tent</div>
+                <div>$1,259.00</div>
+              </div>
+            </div>
+            <div className="cir2">
+
+              <div className="wave-cir-con">
+                <div className="sonar-wave"></div>
               </div>
 
+            </div>
 
-
-              <div className="cir3">
-
-                <div className="wave-cir-con">
-                  <div className="sonar-wave"></div>
+            <div className="box-2">
+              <img src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165" alt="" />
+              <div className="box-2-1">
+                <div>Homecamp Fenby Camp Chair - Desert Khaki
                 </div>
-
+                <div>$349.00</div>
               </div>
-              <div className="box-3">
-                <img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165" alt="" />
-                <div className="box-3-1">
-                  <div>Homecamp Tipi Tent - Sand - 3.5m</div>
-                  <div>$899.00</div>
-                </div>
+            </div>
+
+
+
+            <div className="cir3">
+
+              <div className="wave-cir-con">
+                <div className="sonar-wave"></div>
+              </div>
+
+            </div>
+            <div className="box-3">
+              <img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165" alt="" />
+              <div className="box-3-1">
+                <div>Homecamp Tipi Tent - Sand - 3.5m</div>
+                <div>$899.00</div>
               </div>
             </div>
           </Col>
-          <Col xs={12} md={12} lg={12} xl={6} >
-            <div className="bundle-right" >
-              <div className="br-1">BUNDLE & SAVE</div>
-              <div className="br-2">BUILD YOUR BUNDLES</div>
-              <div className="br-3">
-                <div className="br-3-1">1</div>
-                <div className="br-3-2"><img
-                  src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165"
-                  alt="" /></div>
-                <div className="br-3-3">Homecamp Fenby Camp Chair - Desert Khaki</div>
-                <div className="br-3-4">$349.00</div>
-              </div>
-
-              <div className="br-3">
-                <div className="br-3-1">2</div>
-                <div className="br-3-2"><img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165"
-                  alt="" /></div>
-                <div className="br-3-3">Homecamp Classic Bell Tent</div>
-                <div className="br-3-4">$1259.00</div>
-              </div>
-
-              <div className="br-3">
-                <div className="br-3-1">3</div>
-                <div className="br-3-2"><img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165"
-                  alt="" /></div>
-                <div className="br-3-3">Homecamp Tipi Tent - Sand - 3.5m</div>
-                <div className="br-3-4">$899.00</div>
-              </div>
-
-              <div className="br-4"><a href="#">ADD TO CART | $2,507.00</a></div>
+          <Col Col xs={12} md={12} lg={12} xl={6} div className="bundle-right" >
+            <div className="br-1">BUNDLE & SAVE</div>
+            <div className="br-2">BUILD YOUR BUNDLES</div>
+            <div className="br-3">
+              <div className="br-3-1">1</div>
+              <div className="br-3-2"><img
+                src="https://skins.minimog.co/cdn/shop/products/2_6daa21be-f699-4b37-a72d-1a11da008dec.jpg?v=1659520534&width=165"
+                alt="" /></div>
+              <div className="br-3-3">Homecamp Fenby Camp Chair - Desert Khaki</div>
+              <div className="br-3-4">$349.00</div>
             </div>
+
+            <div className="br-3">
+              <div className="br-3-1">2</div>
+              <div className="br-3-2"><img src="https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=165"
+                alt="" /></div>
+              <div className="br-3-3">Homecamp Classic Bell Tent</div>
+              <div className="br-3-4">$1259.00</div>
+            </div>
+
+            <div className="br-3">
+              <div className="br-3-1">3</div>
+              <div className="br-3-2"><img src="https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=165"
+                alt="" /></div>
+              <div className="br-3-3">Homecamp Tipi Tent - Sand - 3.5m</div>
+              <div className="br-3-4">$899.00</div>
+            </div>
+
+            <div className="br-4"><a href="#">ADD TO CART | $2,507.00</a></div>
           </Col>
         </Row>
       </div>
+
+      <CardGroup style={{ marginTop: "25px", marginBottom: "25px", marginLeft: "15px", marginRight: "15px" }}>
+        <Row >
+          <div className='d-flex justify-content-center align-items-center ' >
+            <div className='text-dark text-align-center' style={{ alignContent: "center", alignItems: "center", textAlign: "center", marginBottom: "25px" }}>
+              <h4 className='mb-1  ' >OUR PRODUCTS</h4>
+              <h1 className='mb-1 '>Gifts Under $50</h1>
+              <h5 className='mb-1 ' style={{ fontFamily: "serif" }}>Shop online for high-end bath accessories, bathroom sinks, vanities,<br /> shower faucets, & more fixtures</h5>
+            </div>
+          </div>
+          <Col sm ><Card >
+            <Card.Img variant="top" src={giftUrl1} id="gift1" onMouseOver={gift_12}
+              onMouseOut={gift_11} />
+            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
+              <Card.Title>GIFTS</Card.Title>
+              <Card.Text>
+              Shopping Tote — Forest Green
+              </Card.Text>
+              <Card.Text>
+                $50.00
+              </Card.Text>
+            </Card.Body>
+          </Card></Col>
+          <Col sm><Card >
+            <Card.Img variant="top" src={giftUrl2} id="gift2" onMouseOver={gift_22}
+              onMouseOut={gift_21} />
+            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
+              <Card.Title>GIFTS</Card.Title>
+              <Card.Text>
+              Barebones Classic Work Glove — Olive
+              </Card.Text>
+              <Card.Text>
+                $59.00
+              </Card.Text>
+            </Card.Body>
+          </Card></Col>
+          <Col sm> <Card >
+            <Card.Img variant="top" src={giftUrl3} id="gift3" onMouseOver={gift_32}
+              onMouseOut={gift_31} />
+            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
+              <Card.Title>GIFTS</Card.Title>
+              <Card.Text>
+              Barebones Garden Scoop
+              </Card.Text>
+              <Card.Text>
+                $99.00
+              </Card.Text>
+            </Card.Body>
+          </Card></Col>
+          <Col sm> <Card >
+            <Card.Img variant="top" src={giftUrl4} id="gift4" onMouseOver={gift_42}
+              onMouseOut={gift_41} />
+            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
+              <Card.Title>GIFTS</Card.Title>
+              <Card.Text>
+              Hultafors Agdor Small Splitting Axe 0.9
+              </Card.Text>
+              <Card.Text>
+                $49.00
+              </Card.Text>
+            </Card.Body>
+          </Card></Col>
+          <Col sm> <Card >
+            <Card.Img variant="top" src={giftUrl5} id="gift5" onMouseOver={gift_52}
+              onMouseOut={gift_51} />
+            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
+              <Card.Title>GIFTS</Card.Title>
+              <Card.Text>
+              Town & Country Tote
+              </Card.Text>
+              <Card.Text>
+                $69.00
+              </Card.Text>
+            </Card.Body>
+          </Card></Col>
+          <center>
+            <Button variant="outline-dark" className="mx-auto" style={{ width: "120px", margin: "20px 0", marginLeft: "auto", marginRight: "auto" }}>SHOP NOW</Button>
+          </center>
+        </Row>
+
+
+      </CardGroup>
     </>
   );
 

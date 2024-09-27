@@ -1,16 +1,5 @@
 import React, { useState } from 'react';
-import {
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBContainer,
-  MDBIcon,
-  MDBCollapse,
-  MDBBtn,
-  MDBTypography
-} from 'mdb-react-ui-kit';
+import { MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -56,15 +45,15 @@ import gift52 from "../assets/images/home/gift52.jpeg"
 
 
 const Home = () => {
-  const [imageUrl1, setImageUrl1] = useState(tent11);
-  const [imageUrl2, setImageUrl2] = useState(tent21);
-  const [imageUrl3, setImageUrl3] = useState(tent31);
-  const image_12 = () => { setImageUrl1(tent12); };
-  const image_11 = () => { setImageUrl1(tent11); };
-  const image_22 = () => { setImageUrl2(tent22); };
-  const image_21 = () => { setImageUrl2(tent21); };
-  const image_32 = () => { setImageUrl3(tent32); };
-  const image_31 = () => { setImageUrl3(tent31); };
+  const [tentUrl1, settentUrl1] = useState(tent11);
+  const [tentUrl2, settentUrl2] = useState(tent21);
+  const [tentUrl3, settentUrl3] = useState(tent31);
+  const image_12 = () => { settentUrl1(tent12); };
+  const image_11 = () => { settentUrl1(tent11); };
+  const image_22 = () => { settentUrl2(tent22); };
+  const image_21 = () => { settentUrl2(tent21); };
+  const image_32 = () => { settentUrl3(tent32); };
+  const image_31 = () => { settentUrl3(tent31); };
 
   const [giftUrl1, setGiftUrl1] = useState(gift11);
   const [giftUrl2, setGiftUrl2] = useState(gift21);
@@ -81,7 +70,111 @@ const Home = () => {
   const gift_41 = () => { setGiftUrl4(gift41); };
   const gift_52 = () => { setGiftUrl5(gift52); };
   const gift_51 = () => { setGiftUrl5(gift51); };
+  let tents = [
+    {
+      "id": "tent1",
+      "src": tentUrl1,
+      "image2": image_12,
+      "image1": image_11,
+      "productCategory": "TENTS",
+      "productName": "Homecamp Tipi Tent",
+      "productPrice": "$1,150.00"
+    },
+    {
+      "id": "tent2",
+      "src": tentUrl2,
+      "image2": image_22,
+      "image1": image_21,
+      "productCategory": "TENTS",
+      "productName": "Homecamp Classic Bell Tent",
+      "productPrice": "$1,259.00"
+    },
+    {
+      "id": "tent3",
+      "src": tentUrl3,
+      "image2": image_32,
+      "image1": image_31,
+      "productCategory": "TENTS",
+      "productName": "Homecamp Tipi Tent Sand",
+      "productPrice": "$899.00"
+    },
+  ];
 
+  let nature=[
+    {
+      "src":nature1,
+      "product":"Tents",
+      "items":"4"
+    },
+    {
+      "src":nature2,
+      "product":"Lighting",
+      "items":"1"
+    },
+    {
+      "src":nature3,
+      "product":"Gifts",
+      "items":"5"
+    },
+    {
+      "src":nature4,
+      "product":"Chairs",
+      "items":"1"
+    },
+    {
+      "src":nature5,
+      "product":"Blankets",
+      "items":"1"
+    }
+  ];
+
+  let gifts = [
+    {
+      "id": "gift1",
+      "src": giftUrl1,
+      "image2": gift_12,
+      "image1": gift_11,
+      "productCategory": "GIFTS",
+      "productName": "Shopping Tote — Forest Green",
+      "productPrice": "$50.00"
+    },
+    {
+      "id": "gift2",
+      "src": giftUrl2,
+      "image2": gift_22,
+      "image1": gift_21,
+      "productCategory": "GIFTS",
+      "productName": "Barebones Classic Work Glove — Olive",
+      "productPrice": "$59.00"
+    },
+    {
+      "id": "gift3",
+      "src": giftUrl3,
+      "image2": gift_32,
+      "image1": gift_31,
+      "productCategory": "GIFTS",
+      "productName": "Barebones Garden Scoop",
+      "productPrice": "$99.00"
+    },
+    {
+      "id": "gift4",
+      "src": giftUrl4,
+      "image2": gift_42,
+      "image1": gift_41,
+      "productCategory": "GIFTS",
+      "productName": "Hultafors Agdor Small Splitting Axe 0.9",
+      "productPrice": "$49.00"
+    },
+    {
+      "id": "gift5",
+      "src": giftUrl5,
+      "image2": gift_52,
+      "image1": gift_51,
+      "productCategory": "GIFTS",
+      "productName": "Town & Country Tote",
+      "productPrice": "$69.00"
+    }
+  ]
 
 
   return (
@@ -126,47 +219,22 @@ const Home = () => {
               <h5 className='mb-1 ' style={{ fontFamily: "serif" }}>Shop online for high-end bath accessories, bathroom sinks, vanities,<br /> shower faucets, & more fixtures</h5>
             </div>
           </div>
-          <Col sm ><Card >
-            <Card.Img variant="top" src={imageUrl1} id="tent1" onMouseOver={image_12}
-              onMouseOut={image_11} />
-            <Card.Body style={{display:"block",alignContent:"center",alignItems:"center",textAlign:"center"}}>
-              <Card.Title >TENTS</Card.Title>
-              <Card.Text>
-                Homecamp Tipi Tent
-              </Card.Text>
-              <Card.Text>
-                $1,150.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
-          <Col sm><Card >
-            <Card.Img variant="top" src={imageUrl2} id="tent2" onMouseOver={image_22}
-              onMouseOut={image_21} />
-            <Card.Body style={{display:"block",alignContent:"center",alignItems:"center",textAlign:"center"}}>
-              <Card.Title>TENTS</Card.Title>
-              <Card.Text>
-                Homecamp Classic Bell Tent
-              </Card.Text>
-              <Card.Text>
-                $1,259.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
-          <Col sm> <Card >
-            <Card.Img variant="top" src={imageUrl3} id="tent3" onMouseOver={image_32}
-              onMouseOut={image_31} />
-            <Card.Body style={{display:"block",alignContent:"center",alignItems:"center",textAlign:"center"}}>
-              <Card.Title>TENTS</Card.Title>
-              <Card.Text>
-                Homecamp Tipi Tent Sand
-              </Card.Text>
-              <Card.Text>
-                $899.00
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          {tents.map(key => (
+            <Col sm ><Card >
+              <Card.Img variant="top" src={key.src} id={key.id} onMouseOver={key.image2}
+                onMouseOut={key.image1} />
+              <Card.Body style={{ display: "block", alignContent: "center", alignItems: "center", textAlign: "center" }}>
+                <Card.Title >{key.productCategory}</Card.Title>
+                <Card.Text>
+                  {key.productName}
+                </Card.Text>
+                <Card.Text>
+                  {key.productPrice}
+                </Card.Text>
+              </Card.Body>
+            </Card></Col>
+          ))}
 
-          </Col>
           <center>
             <Button variant="outline-dark" className="mx-auto" style={{ width: "120px", margin: "20px 0", marginLeft: "auto", marginRight: "auto" }}>SHOP NOW</Button>
           </center>
@@ -183,31 +251,15 @@ const Home = () => {
               <h1 className='mb-1 '>We want you to enjoy the bush, beach and <br /> garden with quality gear. </h1>
             </div>
           </div>
-          <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature1} roundedCircle style={{ width: "150px", height: "150px" }} />
-            <h4 style={{ marginTop: "20px" }}>Tents</h4>
-            <h6>4 Items</h6>
+          {
+            nature.map(key=>(
+              <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
+            <Image src={key.src} roundedCircle style={{ width: "150px", height: "150px" }} />
+            <h4 style={{ marginTop: "20px" }}>{key.product}</h4>
+            <h6>{key.items} Items</h6>
           </Col>
-          <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature2} roundedCircle style={{ width: "150px", height: "150px" }} />
-            <h4 style={{ marginTop: "20px" }}>Lighting</h4>
-            <h6>1 Items</h6>
-          </Col>
-          <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature3} roundedCircle style={{ width: "150px", height: "150px" }} />
-            <h4 style={{ marginTop: "20px" }}>Gifts</h4>
-            <h6>5 Items</h6>
-          </Col>
-          <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature4} roundedCircle style={{ width: "150px", height: "150px" }} />
-            <h4 style={{ marginTop: "20px" }}>Chairs</h4>
-            <h6>1 Items</h6>
-          </Col>
-          <Col xs={6} md={6} lg={2} xl={2} style={{ textAlign: "center" }}>
-            <Image src={nature5} roundedCircle style={{ width: "150px", height: "150px" }} />
-            <h4 style={{ marginTop: "20px" }}>Blankets</h4>
-            <h6>1 Items</h6>
-          </Col>
+            ))
+          }
         </Row>
       </div>
 
@@ -303,71 +355,21 @@ const Home = () => {
               <h5 className='mb-1 ' style={{ fontFamily: "serif" }}>Shop online for high-end bath accessories, bathroom sinks, vanities,<br /> shower faucets, & more fixtures</h5>
             </div>
           </div>
-          <Col sm ><Card >
-            <Card.Img variant="top" src={giftUrl1} id="gift1" onMouseOver={gift_12}
-              onMouseOut={gift_11} />
-            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
-              <Card.Title>GIFTS</Card.Title>
-              <Card.Text>
-              Shopping Tote — Forest Green
-              </Card.Text>
-              <Card.Text>
-                $50.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
-          <Col sm><Card >
-            <Card.Img variant="top" src={giftUrl2} id="gift2" onMouseOver={gift_22}
-              onMouseOut={gift_21} />
-            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
-              <Card.Title>GIFTS</Card.Title>
-              <Card.Text>
-              Barebones Classic Work Glove — Olive
-              </Card.Text>
-              <Card.Text>
-                $59.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
-          <Col sm> <Card >
-            <Card.Img variant="top" src={giftUrl3} id="gift3" onMouseOver={gift_32}
-              onMouseOut={gift_31} />
-            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
-              <Card.Title>GIFTS</Card.Title>
-              <Card.Text>
-              Barebones Garden Scoop
-              </Card.Text>
-              <Card.Text>
-                $99.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
-          <Col sm> <Card >
-            <Card.Img variant="top" src={giftUrl4} id="gift4" onMouseOver={gift_42}
-              onMouseOut={gift_41} />
-            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
-              <Card.Title>GIFTS</Card.Title>
-              <Card.Text>
-              Hultafors Agdor Small Splitting Axe 0.9
-              </Card.Text>
-              <Card.Text>
-                $49.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
-          <Col sm> <Card >
-            <Card.Img variant="top" src={giftUrl5} id="gift5" onMouseOver={gift_52}
-              onMouseOut={gift_51} />
-            <Card.Body style={{display:"block",alignItems:"center",textAlign:"center",height:"152px"}}>
-              <Card.Title>GIFTS</Card.Title>
-              <Card.Text>
-              Town & Country Tote
-              </Card.Text>
-              <Card.Text>
-                $69.00
-              </Card.Text>
-            </Card.Body>
-          </Card></Col>
+          {gifts.map(key => (
+            <Col sm  xs={12} md={4} lg style={{ textAlign: "center" }}><Card >
+              <Card.Img variant="top" src={key.src} id={key.id} onMouseOver={key.image2}
+                onMouseOut={key.image1} />
+              <Card.Body style={{ display: "block", alignItems: "center", textAlign: "center", height: "152px" }}>
+                <Card.Title>{key.productCategory}</Card.Title>
+                <Card.Text>
+                  {key.productName}
+                </Card.Text>
+                <Card.Text>
+                  {key.productPrice}
+                </Card.Text>
+              </Card.Body>
+            </Card></Col>
+          ))}
           <center>
             <Button variant="outline-dark" className="mx-auto" style={{ width: "120px", margin: "20px 0", marginLeft: "auto", marginRight: "auto" }}>SHOP NOW</Button>
           </center>

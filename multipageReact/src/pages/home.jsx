@@ -356,7 +356,7 @@ const Home = () => {
             </div>
           </div>
           {gifts.map(key => (
-            <Col sm  xs={12} md={4} lg style={{ textAlign: "center" }}><Card >
+            <Col sm  xs={6} md={6} lg style={{ textAlign: "center" }}><Card >
               <Card.Img variant="top" src={key.src} id={key.id} onMouseOver={key.image2}
                 onMouseOut={key.image1} />
               <Card.Body style={{ display: "block", alignItems: "center", textAlign: "center", height: "152px" }}>

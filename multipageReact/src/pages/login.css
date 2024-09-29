@@ -38,7 +38,7 @@
       flex-direction: row;
       justify-content: space-evenly; }
       .loginsign .loginsign-2 .loginsign-2-1 {
-        
+      width: 50%;
         padding-left: 10px; }
         .loginsign .loginsign-2 .loginsign-2-1 div {
           margin-bottom: 30px; }
@@ -76,10 +76,25 @@
           font-size: 20px;
           text-decoration: underline black;
           color: black; }
+          .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-41 {
+            display: inline-block;
+            margin-right: 1rem;
+            background-color: brown; }
+            .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-41 input {
+              background-color: brown;
+              padding: 10px;
+              font-size: 20px;
+              color: white;
+              padding-left: 20px;
+              padding-right: 20px; }
+          .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-41:hover {
+            scale: 1.1;
+            transition: scale 0.3s; }
+          
         .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-5 {
           display: inline-block;
           background-color: brown; }
-          .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-5QW input {
+          .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-5 input {
             background-color: brown;
             padding: 10px;
             font-size: 20px;
@@ -89,6 +104,21 @@
         .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-5:hover {
           scale: 1.1;
           transition: scale 0.3s; }
+          .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-8 {
+            display: inline-block;
+            background-color: brown; 
+           padding: 11px;}
+            .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-8 a {
+              background-color: brown;
+              padding: 10px;
+              font-size: 20px;
+              color: white;
+              padding-left: 20px;
+              text-decoration: none;
+              padding-right: 20px; }
+          .loginsign .loginsign-2 .loginsign-2-1 .loginsign-2-1-8:hover {
+            scale: 1.1;
+            transition: scale 0.3s; }
       .loginsign .loginsign-2 .loginsign-2-2 {
         margin-left: 0px; }
         .loginsign .loginsign-2 .loginsign-2-2 div {

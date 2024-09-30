@@ -22,7 +22,7 @@ const Recover=()=>{
                             <div className="loginsign-2-1-2">We will send you an email to reset your password.</div>
                             <div className="loginsign-2-1-3"><input type="email" placeholder="Email" required/></div>
                             <div className="loginsign-2-1-41"><input type="submit" value="SUBMIT" ></input></div>
-                            <div className="loginsign-2-1-8"><Link to="/recover">CANCEL</Link></div>
+                            <div className="loginsign-2-1-8"><Link to="/login">CANCEL</Link></div>
                         </Col>
                         <Col md={6} xl={6} xs={12} sm={12} className="loginsign-2-2">
                             <div className="loginsign-2-2-1">New Customer</div>

@@ -12,7 +12,7 @@ const Recover=()=>{
                     <Col md={12} xl={12} xs={12} sm={12} className="loginsign-1">
                         <div className="loginsign-1-1">Log In</div>
                         <div className="loginsign-1-2">
-                            <div className="loginsign-1-2-1"><Link to="/"><BiBasketball color="red" size="60px" onClick={z}/>Home</Link></div>
+                            <div className="loginsign-1-2-1"><Link to="/"><BiBasketball color="red" size="60px"/>Home</Link></div>
                             <div className="loginsign-1-2-2">Account</div>
                         </div>
                     </Col>

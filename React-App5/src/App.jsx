@@ -18,15 +18,16 @@
 
 // export default App
 
-import { MyComponent } from "./countContext"
-import Increase from "./increase"
+// import { MyComponent } from "./countContext"
+import { ColorContext } from "./colorContext.jsx"
+import MyComponent from "./Mycomponent.jsx"
 
 
 const App = () => {
   return (
-    <MyComponent>
-      <Increase />
-    </MyComponent>
+    <ColorContext>
+      <MyComponent />
+    </ColorContext>
   )
 }
 

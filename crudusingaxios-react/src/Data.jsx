@@ -11,9 +11,8 @@ const Data = () => {
   return (
     <>
     {
-      jsonData.map((item)=>{
-        return(
-          <Card style={{ width: '18rem' }}>
+      jsonData.map((item)=>(
+          <Card style={{ width: '18rem' }} key={item.id}>
           <Card.Img variant="top" src={item.image} />
           <Card.Body>
             <Card.Title>{item.name}</Card.Title>
@@ -25,7 +24,7 @@ const Data = () => {
           </Card.Body>
         </Card>
         )
-      })
+      )
       
     }
     

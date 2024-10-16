@@ -4,8 +4,7 @@ const App = () => {
   return (
     <>
     <SendData></SendData>
-
-    <Data></Data>
+    {/* <Data></Data> */}
     </>
   )
 }

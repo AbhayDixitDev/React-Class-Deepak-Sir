@@ -1,12 +1,7 @@
 {
   "info": [
     {
-      "id": "01",
-      "name": "Abhay Dixit",
-      "image": "https://p16-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/1664480656028673.jpeg",
-      "age": 24,
-      "city": "New Delhi",
-      "email": "abhaydixit@gmail.com"
+      "id": "01"
     },
     {
       "id": "02",
@@ -14,7 +9,7 @@
       "image": "https://p16-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/1664480656028673.jpeg",
       "age": 20,
       "city": "Mumbai",
-      "email": "shivanshtripathi@gmail.com"
+      "email": "shivanstripati@gmail.com"
     },
     {
       "id": "03",
@@ -33,20 +28,12 @@
       "email": "rajeshkumar@gmail.com"
     },
     {
-      "id": "4ab2",
-      "name": "Abhay",
-      "image": "gjufhjf",
-      "age": "28",
-      "city": "Sagar",
-      "email": "ghfghfgggj"
-    },
-    {
-      "id": "8aad",
-      "name": "154354",
-      "image": "654564",
-      "age": "468545",
-      "city": "5454",
-      "email": "6846846"
+      "id": "ae5d",
+      "name": "Ramu",
+      "image": "https://p16-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/1664480656028673.jpeg",
+      "age": "24",
+      "city": "pune",
+      "email": "dixitshivam534@gmail.com"
     }
   ]
 }

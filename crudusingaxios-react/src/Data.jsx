@@ -12,9 +12,9 @@ const Data = () => {
     <>
     {
       jsonData.map((item)=>(
-          <Card style={{ width: '18rem' }} key={item.id}>
+          <Card style={{ width: '17rem',display:"inline-block",justifyContent:"space-between",margin:"10px" }} key={item.id}>
           <Card.Img variant="top" src={item.image} />
-          <Card.Body>
+          <Card.Body >
             <Card.Title>{item.name}</Card.Title>
             <Card.Text>
               {jsonData.age}

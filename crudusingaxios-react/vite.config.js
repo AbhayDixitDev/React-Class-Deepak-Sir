@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     outDir: 'dist',
+    publicDir: 'dist', // Set the public directory to "dist"
   },
   css: {
     preprocessorOptions: {

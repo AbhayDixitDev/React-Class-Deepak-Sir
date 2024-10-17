@@ -5,7 +5,7 @@ const Data = () => {
     const [jsonData, setJsonData] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:4000/info').then((items)=>setJsonData(items.data));
+        axios.get('https://crud-data-for-react.vercel.app/info').then((items)=>setJsonData(items.data));
     }, [])
 
   return (

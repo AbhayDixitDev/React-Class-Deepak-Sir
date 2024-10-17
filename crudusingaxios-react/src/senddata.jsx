@@ -11,7 +11,7 @@ const SendData = () => {
     const [search, setSearch] = useState("");
 
     useEffect(() => {
-        axios.get('http://localhost:4000/info').then((items) => setJsonData(items.data));
+        axios.get('https://crud-data-for-react.vercel.app/info').then((items) => setJsonData(items.data));
     }, []);
 
     const [userdata, setUserdata] = useState({
@@ -39,7 +39,7 @@ const SendData = () => {
     }
 
     const submitdata = () => {
-        axios.post("http://localhost:4000/info", JSON.stringify(userdata))
+        axios.post("https://crud-data-for-react.vercel.app/info", JSON.stringify(userdata))
             .then(() => { window.alert("Data sent successfully") })
             .then(() => {
                 setUserdata({
@@ -53,7 +53,7 @@ const SendData = () => {
     }
 
     const deleteuser = (id) => {
-        axios.delete(`http://localhost:4000/info/${id}`).then(() => { window.alert("Data deleted successfully") });
+        axios.delete(`https://crud-data-for-react.vercel.app/info/${id}`).then(() => { window.alert("Data deleted successfully") });
     }
 
     const updateform = (arg) => {
@@ -69,7 +69,7 @@ const SendData = () => {
     }
 
     const updateuser = () => {
-        axios.put(`http://localhost:4000/info/${updateid}`, JSON.stringify(userdata)).then(() => { window.alert("Data updated successfully") });
+        axios.put(`https://crud-data-for-react.vercel.app/info/${updateid}`, JSON.stringify(userdata)).then(() => { window.alert("Data updated successfully") });
     }
 
     return (

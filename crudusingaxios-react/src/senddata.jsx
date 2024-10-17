@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Button from 'react-bootstrap/Button';
-import './SendData.css'; // Import the external CSS file
+import './senddata.css'; // Import the external CSS file
 
 const SendData = () => {
     const [jsonData, setJsonData] = useState([]);

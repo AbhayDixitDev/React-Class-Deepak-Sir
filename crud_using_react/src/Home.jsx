@@ -17,6 +17,7 @@ const Home = () => {
           <th>Name</th>
           <th>Email</th>
           <th>Phone</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -25,7 +26,12 @@ const Home = () => {
                 <td>{user.id}</td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
-                <td>{user.phone}</td>                
+                <td>{user.phone}</td>
+                <td>
+                  <button onClick={()=>Update('${user.id}')}>Update</button>
+                  <button onClick={()=>Delete('${user.id}')}>Delete</button>
+                </td>
+
             </tr>
         ))}
       </tbody>

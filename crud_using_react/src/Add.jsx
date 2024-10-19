@@ -12,29 +12,33 @@ const Add = () => {
         "email":"",
         "phone":""
     })
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+   
      
     
 
     useEffect(() => {
         axios.get("http://localhost:4000/userdata")
         .then(res => setUserdata(res.data))
-    }, [])
-    const handleAdd = () => {
-        axios.post("http://localhost:4000/userdata", {
-            name: "",
-            email: "",
-            phone: ""
+    }, [userdata])
+    const adduserData = () => {
+        axios.post("http://localhost:4000/userdata", {          
+            name: adddata.name,
+            email: adddata.email,
+            phone: adddata.phone
         })
-        .then(res => setUserdata(res.data))
+        .then(setShow(false))
+        
     }
     const adddatachange = (e) => {
         setAdddata({...adddata,[e.target.name]:e.target.value})
         console.log(adddata)
     }
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+   
     return (
         <div>
             <button onClick={handleShow} className='btn btn-success my-3'>Add User</button>
@@ -78,7 +82,7 @@ const Add = () => {
       </Form.Group>
 
       
-      <Button variant="primary" type="submit">
+      <Button variant="primary" onClick={adduserData}>
         Submit
       </Button>
     </Form>

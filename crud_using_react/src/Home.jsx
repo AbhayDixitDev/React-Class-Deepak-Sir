@@ -1,12 +1,24 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import Table from 'react-bootstrap/Table'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  let nav=useNavigate();
     const [userdata, setUserdata] = useState([])
     useEffect(() => {
         axios.get("http://localhost:4000/userdata")
         .then(res => setUserdata(res.data))
     }, [])
+
+    const Delete = (id) => {
+        axios.delete(`http://localhost:4000/userdata/${id}`)
+            .then(res => {
+                // Remove the deleted user from the state
+                setUserdata(userdata.filter(user => user.id !== id));
+            })
+            .catch(err => console.error("Error deleting user:", err));
+    }
+    
     return (
         <div>
             <h3>Home</h3>
@@ -28,8 +40,8 @@ const Home = () => {
                 <td>{user.email}</td>
                 <td>{user.phone}</td>
                 <td>
-                  <button onClick={()=>Update('${user.id}')}>Update</button>
-                  <button onClick={()=>Delete('${user.id}')}>Delete</button>
+                  <button onClick={()=>nav(`/update/${user.id}`)}>Update</button>
+                  <button onClick={()=>Delete(`${user.id}`)}>Delete</button>
                 </td>
 
             </tr>

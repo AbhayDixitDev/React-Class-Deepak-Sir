@@ -12,7 +12,8 @@ const Update = () => {
   const [adddata, setAdddata] = useState({
     "name": "",
     "email": "",
-    "phone": ""
+    "phone": "",
+    "password":""
   })
 
   useEffect(() => {
@@ -37,22 +38,25 @@ const Update = () => {
     return (
         <div>
             <Container>
-                <Row>
+                <Row style={{margin:"auto auto"}}>
                     <Col>
-                    <Form>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" name='name' value={adddata.name} onChange={adddatachange} placeholder="Enter Your Name" />
+                    <Form style={{backgroundColor:"black", padding:"6rem",borderRadius:"1rem"}}>
+            <Form.Group className="mb-3" controlId="formBasicName">
+              <Form.Label style={{color:"white"}}>Name</Form.Label>
+              <Form.Control type="text" name='name' value={adddata.name} onChange={adddatachange} placeholder="Enter Your Name"  />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label style={{color:"white"}}>Email address</Form.Label>
               <Form.Control type="email" name='email' value={adddata.email} onChange={adddatachange} placeholder="Enter Your Email" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Phone Number</Form.Label>
-              <Form.Control type="number" name='phone' value={adddata.phone} onChange={adddatachange} placeholder="Enter Your Phone Number" />
+            <Form.Group className="mb-3" controlId="formBasicPhone">
+              <Form.Label style={{color:"white"}}>Phone Number</Form.Label>
+              <Form.Control type="tel" name='phone' value={adddata.phone} onChange={adddatachange} placeholder="Enter Your Phone Number" />
             </Form.Group>
-
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label style={{color:"white"}}>Password</Form.Label>
+              <Form.Control type="text" name='password' value={adddata.password} onChange={adddatachange} placeholder="Enter Your Password" />
+            </Form.Group>
 
             <Button variant="primary" onClick={Update1}>
               Update

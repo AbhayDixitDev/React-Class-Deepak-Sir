@@ -1,7 +1,8 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { Container } from 'react-bootstrap'
 import Table from 'react-bootstrap/Table'
-import { useNavigate } from 'react-router-dom'
+import { BrowserRouter, useNavigate } from 'react-router-dom'
 const Home = () => {
   let nav=useNavigate();
     const [userdata, setUserdata] = useState([])
@@ -20,10 +21,10 @@ const Home = () => {
     }
     
     return (
-        <div>
+        <Container>
             <h3>Home</h3>
             <Table striped bordered hover variant="dark">
-      <thead>
+      <thead >
         <tr>
           <th>#</th>
           <th>Name</th>
@@ -48,7 +49,7 @@ const Home = () => {
         ))}
       </tbody>
     </Table>
-        </div>
+        </Container>
     )
 }
 

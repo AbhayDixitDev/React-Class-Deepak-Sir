@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
+import { Container } from 'react-bootstrap'
 
 const Add = () => {
   const [userdata, setUserdata] = useState([])
@@ -29,7 +30,9 @@ const Add = () => {
     axios.post("http://localhost:4000/userdata", {
       name: adddata.name,
       email: adddata.email,
-      phone: adddata.phone
+      phone: adddata.phone,
+      password:adddata.password     
+      
     })
       .then(setShow(false))
 
@@ -40,7 +43,7 @@ const Add = () => {
   }
 
   return (
-    <div>
+    <Container>
       <button onClick={handleShow} className='btn btn-success my-3'>Add User</button>
       <Table striped bordered hover variant="dark">
         <thead>
@@ -49,6 +52,7 @@ const Add = () => {
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>password</th>
           </tr>
         </thead>
         <tbody>
@@ -58,6 +62,7 @@ const Add = () => {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>
+              <td>{user.password}</td>
             </tr>
           ))}
         </tbody>
@@ -78,7 +83,11 @@ const Add = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Phone Number</Form.Label>
-              <Form.Control type="number" name='phone' onChange={adddatachange} placeholder="Enter Your Phone Number" />
+              <Form.Control type="tel" name='phone' onChange={adddatachange} placeholder="Enter Your Phone Number" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" name='password' onChange={adddatachange} placeholder="Enter Your Password" />
             </Form.Group>
 
 
@@ -96,7 +105,7 @@ const Add = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-    </div>
+    </Container>
   )
 
 

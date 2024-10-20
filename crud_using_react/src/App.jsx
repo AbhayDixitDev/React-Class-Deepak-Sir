@@ -4,6 +4,7 @@ import Home from './Home.jsx'
 import Add from './Add.jsx'
 import Search from './Search.jsx'
 import Update from './Update.jsx'
+import Account from './Account.jsx'
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/search" element={<Search />} />
         <Route path="/update" element={<Update />} />
         <Route path="/update/:id" element={<Update />} />
+        <Route path="/account" element={<Account />} />
 
 
       </Routes>

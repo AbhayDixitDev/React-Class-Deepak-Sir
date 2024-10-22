@@ -24,6 +24,7 @@ const Home = () => {
         <Container>
             <h3>Home</h3>
             <Table striped bordered hover variant="dark">
+              
       <thead >
         <tr>
           <th>#</th>

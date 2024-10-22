@@ -9,12 +9,12 @@
       "id": "01"
     },
     {
-      "id": "02",
       "name": "Shivansh Tripathi",
       "image": "https://p16-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/1664480656028673.jpeg",
-      "age": 20,
+      "age": "21",
       "city": "Mumbai",
-      "email": "shivanstripati@gmail.com"
+      "email": "shivanstripati@gmail.com",
+      "id": "02"
     },
     {
       "id": "03",

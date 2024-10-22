@@ -52,7 +52,6 @@ const Add = () => {
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>password</th>
           </tr>
         </thead>
         <tbody>
@@ -62,7 +61,6 @@ const Add = () => {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>
-              <td>{user.password}</td>
             </tr>
           ))}
         </tbody>

@@ -11,7 +11,7 @@ const SendData = () => {
     const [search, setSearch] = useState("");
 
     useEffect(() => {
-        axios.get('https://crud-data-for-react.vercel.app/info').then((items) => setJsonData(items.data));
+        axios.get('https://crud-data-for-react-git-master-abhay-dixits-projects-4f073080.vercel.app/info').then((items) => setJsonData(items.data));
     }, []);
 
     const [userdata, setUserdata] = useState({
@@ -34,12 +34,12 @@ const SendData = () => {
     const updatevalue = (e) => {
         let key = e.target.name;
         let value = e.target.value;
-        setUserdata({ ...userdata, [key]: value });
-        updateform();
+        setUserdata({ ...userdata, ...{ [key]: value } });
+        // updateform(updateid);
     }
 
     const submitdata = () => {
-        axios.post("https://crud-data-for-react.vercel.app/info", JSON.stringify(userdata))
+        axios.post("https://crud-data-for-react-git-master-abhay-dixits-projects-4f073080.vercel.app/info", JSON.stringify(userdata))
             .then(() => { window.alert("Data sent successfully") })
             .then(() => {
                 setUserdata({
@@ -53,24 +53,47 @@ const SendData = () => {
     }
 
     const deleteuser = (id) => {
-        axios.delete(`https://crud-data-for-react.vercel.app/info/${id}`).then(() => { window.alert("Data deleted successfully") });
+        axios.delete(`https://crud-data-for-react-git-master-abhay-dixits-projects-4f073080.vercel.app/info/${id}`).then(() => { window.alert("Data deleted successfully") });
     }
 
     const updateform = (arg) => {
-        setUpdateid(arg.id);
-        setUpdform(!updform);
-        setUserdata({
-            name: arg.name,
-            image: arg.image,
-            age: arg.age,
-            city: arg.city,
-            email: arg.email
-        });
-    }
-
-    const updateuser = () => {
-        axios.put(`https://crud-data-for-react.vercel.app/info/${updateid}`, JSON.stringify(userdata)).then(() => { window.alert("Data updated successfully") });
-    }
+        console.log(arg); // Log the argument to check its structure
+        if (arg) {
+            setUpdateid(arg.id);
+            setUpdform(!updform);
+            setUserdata({
+                ...userdata,            
+                ...{
+                "id":arg.id,
+                "name":arg.name,
+                "image":arg.image,
+                "age":arg.age,
+                "city":arg.city,
+                "email":arg.email
+                }
+              })
+        } else {
+            console.error("Invalid argument passed to updateform:", arg);
+        }
+    };
+    const updateuser = async () => {
+        alert(JSON.stringify(userdata));
+    
+        try {
+            const response = await axios.put(`https://crud-data-for-react-git-master-abhay-dixits-projects-4f073080.vercel.app/info/${updateid}`, userdata);
+            alert("Data updated successfully");
+            console.log("Response:", response.data);
+        } catch (error) {
+            console.error("Error details:", error);
+            if (error.response) {
+                alert(`Error: ${error.response.status} - ${error.response.data.message || error.response.data}`);
+            } else if (error.request) {
+                alert("No response received from the server. Please try again later.");
+            } else {
+                alert("Error in setting up the request: " + error.message);
+            }
+        }
+    };
 
     return (
         <>

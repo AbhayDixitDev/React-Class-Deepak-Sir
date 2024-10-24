@@ -20,8 +20,6 @@ const Add = () => {
 
 
 
-
-
   useEffect(() => {
     axios.get("http://localhost:4000/userdata")
       .then(res => setUserdata(res.data))
@@ -32,7 +30,6 @@ const Add = () => {
       email: adddata.email,
       phone: adddata.phone,
       password:adddata.password     
-      
     })
       .then(setShow(false))
 

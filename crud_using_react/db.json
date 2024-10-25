@@ -1,0 +1,25 @@
+{
+  "userdata": [
+    {
+      "id": "aa6e",
+      "name": "Shivansh Tripathi",
+      "email": "shivanstripati@gmail.com",
+      "phone": "7017706862",
+      "password": "12345"
+    },
+    {
+      "id": "08b3",
+      "name": "Abhay Dixit",
+      "email": "abhaydixit@gmail.com",
+      "phone": "7017709865",
+      "password": "12345"
+    },
+    {
+      "id": "30ec",
+      "name": "Gagan Jha",
+      "email": "gaganjha@gmail.com",
+      "phone": "7017706862",
+      "password": "12345"
+    }
+  ]
+}
